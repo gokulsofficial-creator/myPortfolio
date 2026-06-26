@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul — Python Developer</title>
+    <meta name="description" content="Portfolio of Alexander Vance, a premium UI/UX Designer, Motion Designer, and Frontend Architect specializing in Apple-caliber digital products.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="ambient-bg" id="ambientBg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            
+            <div></div>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div>
+                
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- <button class="theme-toggle magnetic-target" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button> -->
+                <button class="menu-hamburger" id="menuHamburger" aria-label="Toggle Mobile Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="reveal-wrapper"><span class="reveal-item">GOKUL</span></span>
+                        <span class="reveal-wrapper"><span class="reveal-item text-gradient font">Full Stack Developer</span></span>
+                    </h1>
+                    <p class="hero-subtitle reveal-wrapper">
+                        <span class="reveal-item">AI & ML enthusiast with a passion for building intelligent solutions and modern web experiences. Skilled in Python, Data Science, Full-Stack Development, and UI/UX Design. Focused on creating impactful projects, continuous learning, and solving real-world problems.</span>
+                    </p>
+                    <div class="hero-actions reveal-wrapper">
+                        <div class="reveal-item btn-group">
+                            <a href="#projects" class="btn btn-primary magnetic-target">Explore Work</a>
+                            <a href="#contact" class="btn btn-secondary magnetic-target">Hire me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-display reveal-wrapper">
+                    <div class="hero-showcase-card reveal-item dynamic-tilt">
+                        <div class="card-glass-glow"></div>
+                        <div class="window-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="window-title">@gokul_architecture.sys</span>
+                        </div>
+                        <div class="window-body">
+                            <div class="code-line"><span class="keyword">const</span> <span class="variable">art</span> = <span class="keyword">new</span> <span class="class">ExperienceEngine</span>({</div>
+                            <div class="code-line indent"><span class="property">performance</span>: <span class="string">'boosted'</span>,</div>
+                            <div class="code-line indent"><span class="property">aesthetic</span>: <span class="string">'minimal_luxury'</span>,</div>
+                            <div class="code-line indent"><span class="property">precision</span>: <span class="number">100%</span></div>
+                            <div class="code-line">});</div>
+                            <div class="code-line"><span class="variable">art</span>.<span class="method">render</span>();</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Connecting digital solution with problems</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card dynamic-tilt">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <h3>Frontend Architecture</h3>
+                        <p>Vanilla optimization, custom reactive design state machines, modern DOM manipulation, semantic structure engineering.</p>
+                        <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>Tailwind</span></div>
+                    </div>
+                    
+                    <div class="skill-card dynamic-tilt">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <h3>Backend Architecture</h3>
+                        <p>Creating efficient backend solutions focused on scalability, security, and seamless data management.</p>
+                        <div class="skill-tags"><span>Python</span><span>Django</span><span>SQL</span><span>AI/ML</span></div>
+                    </div>
+                    <div class="skill-card dynamic-tilt">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12 s4.477 10 10 10z"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                        </div>
+                        <h3>UI/UX & Product Design</h3>
+                        <p>Transforming ideas into visually appealing and user-friendly digital experiences.</p>
+                        <div class="skill-tags"><span>Figma Professional</span><span>Typography</span><span>Design Systems</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Case Studies</span>
+                    <h2 class="section-title">Selected Works</h2>
+                    <p class="section-subtitle">Exemplary production products built with pure architectural integrity.</p>
+                </div>
+                <div class="projects-list">
+                    <article class="project-item">
+                        <div class="project-image-container dynamic-tilt">
+                            <div class="project-img-placeholder">
+                                <div class="mock-ui">
+                                    <div class="mock-nav"><span class="project-num">Notez</span></div>
+                                    <div class="mock-hero"><img src="images\Notes.jpg" alt="Notes Appplication"></div>
+                                    <div class="mock-grid"><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Notes Web Application</h3>
+                            <p class="project-description">Notez is a modern and intuitive note-taking application designed to help users capture, organize, and manage their ideas efficiently. The project showcases my skills in frontend development, UI/UX design, and creating user-focused applications that improve everyday productivity.</p>
+                            <div class="project-tech">
+                                <span>CRUD Operations</span><span>CSS Grid Architecture</span><span>Data Handling</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/gokulsofficial-creator/Notez" class="btn btn-primary btn-sm magnetic-target" target="_blank">View Code &nbsp --></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item reversed">
+                        <div class="project-image-container dynamic-tilt">
+                            <div class="project-img-placeholder design-variant">
+                                <div class="mock-ui">
+                                    <div class="mock-nav"><span class="project-num">Business</span></div>
+                                    <div class="mock-hero"><img src="images\Business.jpg" alt="Business Image"></div>
+                                    <div class="mock-grid"><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Business Websites</h3>
+                            <p class="project-description">Design and develop modern business websites that establish a strong online presence and effectively showcase products and services. My goal is to create scalable, high-quality digital solutions that help businesses build credibility and grow their brand.</p>
+                            <div class="project-tech">
+                                <span>Custom Web Components</span><span>CSS Variable Orchestration</span><span>Performance APIs</span>
+                            </div>
+                            <!-- <div class="project-actions">
+                                <a href="#" class="btn btn-primary btn-sm magnetic-target">Live Engine</a>
+                                <a href="#" class="btn btn-secondary btn-sm magnetic-target">View Code</a>
+                            </div> -->
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-image-container dynamic-tilt">
+                            <div class="project-img-placeholder design-variant">
+                                <div class="mock-ui">
+                                    <div class="mock-nav"><span class="project-num">E-Commerce</span></div>
+                                    <div class="mock-hero"><img src="images\E-Commerce.jpg" alt="E-Commerce Image"></div>
+                                    <div class="mock-grid"><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-Commerce Websites</h3>
+                            <p class="project-description">Design and developement of modern e-commerce websites that deliver seamless shopping experiences and drive online business growth. My goal is to create scalable digital commerce solutions that enhance customer satisfaction and maximize conversions.</p>
+                            <div class="project-tech">
+                                <span>Shopping Cart</span><span>Product Management</span><span>User Authentication</span>
+                            </div>
+                            <!-- <div class="project-actions">
+                                <a href="#" class="btn btn-primary btn-sm magnetic-target">Live Engine</a>
+                                <a href="#" class="btn btn-secondary btn-sm magnetic-target">View Code</a>
+                            </div> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">Trusted by Visionaries</h2>
+                    <p class="section-subtitle">Endorsements from Happy Clients.</p>
+                </div>
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <div class="testimonial-card active">
+                            <p class="testimonial-quote">"Working with Gokul was a seamless experience. He understood our requirements quickly and delivered a clean, responsive website with excellent attention to detail"</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">A.S</div>
+                                <div>
+                                    <h4 class="author-name">Aarav Sharma</h4>
+                                    <!-- <p class="author-meta">VP of Product, Linear Nexus</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"The UI was modern, intuitive, and visually impressive. Every interaction felt smooth, and the final product exceeded our expectations."</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">P.N</div>
+                                <div>
+                                    <h4 class="author-name">Priya Nair</h4>
+                                    <!-- <p class="author-meta">Founder, Core-AI Studio</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"From concept to deployment, the development process was smooth and efficient. The final website perfectly reflected our brand identity."</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">M.K</div>
+                                <div>
+                                    <h4 class="author-name"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"Gokul combines creativity with strong technical skills. His ability to transform ideas into polished digital experiences makes him a valuable developer."</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">R.V</div>
+                                <div>
+                                    <h4 class="author-name">Rahul Verma</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"Communication was clear throughout the project, and every milestone was delivered on time. The website was fast, responsive, and professionally crafted."</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">N.K</div>
+                                <div>
+                                    <h4 class="author-name">Neha Kapoor</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">"The attention to design consistency and user experience was exceptional. Every page felt thoughtfully designed and easy to navigate."</p>
+                            <div class="testimonial-author">
+                                <div class="avatar-placeholder">A.M</div>
+                                <div>
+                                    <h4 class="author-name">Arjun Mehta</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn magnetic-target" id="prevTestimonial" aria-label="Previous Testimonial">←</button>
+                        <button class="slider-btn magnetic-target" id="nextTestimonial" aria-label="Next Testimonial">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container contact-container">
+                <div class="contact-info-panel">
+                    <span class="section-tag">Need any help?</span>
+                    <h2 class="section-title">Initiate a Project Brief</h2>
+                    <p class="section-subtitle">Let’s engineer something unforgettable together.</p>
+                    <div class="contact-details">
+                        <div class="detail-item"><span class="label">Direct Communication:</span><span class="value"><a href="mailto:gokulsofficial.in@gmail.com" target="_blank" style="text-decoration: none; color: white;"  >gokulsofficial.in@gmail.com</a></span></div>
+                        <div class="detail-item"><span class="label">Availability Status:</span><span class="value success-glow"> 9am to 10pm</span></div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-panel">
+                    
+                    <div class="enquiry">
+                        <h2>Let's Work Together</h2>      
+                        <a href="https://forms.gle/usvNd4SKRptE4ztE9" target="_blank">                 
+                            <button type="submit" class="btn btn-primary form-submit-btn magnetic-target" id="">
+                                
+                                <span class="btn-text">Send a Message</span>
+                                <!-- <span class="success-icon">✓</span> -->
+                            </button>
+                        </a>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Follow me!</h2>
+            <div class="social-links">
+                <a href="https://github.com/gokulsofficial-creator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gokulsofficial/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/pagesbygokul/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://dribbble.com/gokulsofficial-in" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
